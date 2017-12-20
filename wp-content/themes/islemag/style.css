@@ -1908,12 +1908,12 @@ blockquote {
 	display: table;
 	width: 100%;
 	min-height: 100px;
-	padding: 15px;
+	/*padding: 15px;*/
 }
 
 .navbar-brand {
 	display: table-cell;
-	float: none;
+	float: left;
 	position: relative;
 	height: auto;
 	min-height: 100px;

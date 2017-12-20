@@ -93,7 +93,7 @@
 				<?php
 				islemag_header_content_head();
 				?>
-				<div class="col-md-3 col-sm-3 col-xs-12 navbar-brand">
+				<div class="col-lg-6 col-md-3 col-sm-3 col-xs-12 navbar-brand">
 					<?php
 						global $wp_customize;
 
@@ -123,9 +123,9 @@
 							echo '<div class="header-logo-wrap text-header">';
 
 							if ( is_front_page() ) :
-								echo '<h1 itemprop="headline" id="site-title" class="site-title"><a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home">' . esc_attr( get_bloginfo( 'name' ) ) . '</a></h1>';
+								echo '<h1 itemprop="headline" id="site-title" class="site-title"><a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home">' . esc_attr( get_bloginfo( 'name' ) ) . '<img src="logo_header_1.png"></a></h1>';
 							else :
-								echo '<p itemprop="headline" id="site-title" class="site-title"><a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home">' . esc_attr( get_bloginfo( 'name' ) ) . '</a></p>';
+								echo '<p itemprop="headline" id="site-title" class="site-title"><a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home">' . esc_attr( get_bloginfo( 'name' ) ) . '<img src="logo_header_1.png"></a></p>';
 							endif;
 
 							echo '<p itemprop="description" id="site-description" class="site-description">' . esc_attr( get_bloginfo( 'description' ) ) . '</p>';
