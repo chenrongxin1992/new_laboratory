@@ -63,7 +63,7 @@ if ( $wp_query->have_posts() ) : ?>
 			</div> <!-- End .entry-overlay-meta -->
 		</div> <!-- End .entry-media -->
 
-		<h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3><span class="entry-overlay-date"><i class="fa fa-calendar"></i><?php echo get_the_date( 'j M' ); ?></span>
 		<?php
 		if ( function_exists( 'cwppos_calc_overall_rating' ) ) {
 			$rating = cwppos_calc_overall_rating( $postid );

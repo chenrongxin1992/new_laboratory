@@ -37,7 +37,7 @@
 				if ( ! empty( $post_thumbnail ) ) {
 					echo $post_thumbnail;
 				} else {
-					echo '<img src="' . get_template_directory_uri() . '/img/blogpost-placeholder.jpg" />';
+					//echo '<img src="' . get_template_directory_uri() . '/img/blogpost-placeholder.jpg" />';
 				}
 				?>
 			</a>

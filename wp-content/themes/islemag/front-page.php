@@ -98,7 +98,7 @@ if ( (bool) $islemag_header_slider_disable !== true ) {
 			</div><!-- End .islemag-content-left -->
 
 			<?php
-			get_sidebar();
+			//get_sidebar();
 			?>
 
 

@@ -698,27 +698,32 @@ function islemag_display_section( $section_nb, $is_hidden = false ) {
 			$template              = $section_nb;
 			$islemag_section_title = get_theme_mod( 'islemag_section1_title', esc_html__( 'Section 1', 'islemag' ) );
 			$islemag_aria_label    = esc_html__( 'Ads Area 1', 'islemag' );
+			$icon_sec = '&nbsp;&nbsp;<i class="fa fa-newspaper-o" aria-hidden="true"></i>';
 			break;
 		case 2:
 			$template              = $section_nb;
 			$islemag_section_title = get_theme_mod( 'islemag_section2_title', esc_html__( 'Section 2', 'islemag' ) );
 			$islemag_aria_label    = esc_html__( 'Ads Area 2', 'islemag' );
+			$icon_sec = '&nbsp;&nbsp;<i class="fa fa-bullhorn" aria-hidden="true"></i>';
 			break;
 		case 3:
 			$template              = 1;
 			$islemag_section_title = get_theme_mod( 'islemag_section3_title', esc_html__( 'Section 3', 'islemag' ) );
 			$islemag_aria_label    = esc_html__( 'Ads Area 3', 'islemag' );
+			$icon_sec = '&nbsp;&nbsp;<i class="fa fa-bullhorn" aria-hidden="true"></i>';
 			break;
 		case 4:
 			$postperpage           = get_theme_mod( 'islemag_section4_posts_per_page', 6 );
 			$template              = 3;
 			$islemag_section_title = get_theme_mod( 'islemag_section4_title', esc_html__( 'Section 4', 'islemag' ) );
 			$islemag_aria_label    = esc_html__( 'Ads Area 4', 'islemag' );
+			$icon_sec = '&nbsp;&nbsp;<i class="fa fa-bullhorn" aria-hidden="true"></i>';
 			break;
 		case 5:
 			$template              = 4;
 			$islemag_section_title = get_theme_mod( 'islemag_section5_title', esc_html__( 'Section 5', 'islemag' ) );
 			$islemag_aria_label    = esc_html__( 'Ads Area 5', 'islemag' );
+			$icon_sec = '&nbsp;&nbsp;<i class="fa fa-bullhorn" aria-hidden="true"></i>';
 			break;
 	}
 	/*Do not delete these variables. Those are used in template files*/
@@ -746,7 +751,9 @@ function islemag_display_section( $section_nb, $is_hidden = false ) {
 		if ( ! empty( $islemag_section_title ) ) {
 		?>
 			<h2 class="title-border title-bg-line <?php echo apply_filters( 'islemag_line_color', $colors[ $choose_color ] ); ?> mb30">
-				<span><?php echo esc_attr( $islemag_section_title ); ?></span>
+				<span><?php echo esc_attr( $islemag_section_title ); echo $icon_sec;?>
+					
+				</span>
 			</h2>
 			<?php
 		} else {

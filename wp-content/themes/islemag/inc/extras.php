@@ -34,21 +34,23 @@ if ( ! function_exists( 'islemag_footer' ) ) {
 	 */
 	function islemag_footer() {
 		?>
-		<div class="col-md-8 col-md-push-4 islemag-footer-menu">
+		<div class="col-md-6 col-md-push-6 islemag-footer-menu">
 			<?php
 
-			$defaults = array(
-				'theme_location' => 'islemag-footer',
-				'fallback_cb'    => false,
-				'items_wrap'     => '<ul class="footer-menu" id="%1$s" class="%2$s">%3$s</ul>',
-				'depth'          => 1,
+			// $defaults = array(
+			// 	'theme_location' => 'islemag-footer',
+			// 	'fallback_cb'    => false,
+			// 	'items_wrap'     => '<ul class="footer-menu" id="%1$s" class="%2$s">%3$s</ul>',
+			// 	'depth'          => 1,
+			// );
+
+			// wp_nav_menu( $defaults );
+				printf(
+				sprintf(  esc_html__( '2017 © 大数据系统计算技术国家工程实验室', 'reviewzine' ) )
 			);
-
-			wp_nav_menu( $defaults );
-
 			?>
 		</div><!-- End .col-md-6 -->
-		<div class="col-md-4 col-md-pull-8 powerdby">
+		<div class="col-md-6 col-md-pull-6 powerdby">
 			<?php
 				$islemag_copyright = get_theme_mod(
 					'islemag_footer_copyright', sprintf(

@@ -483,10 +483,10 @@ input[type="submit"] {
 	margin-bottom: 0;
 	padding: 9px 16px;
 	border: none;
-	border: 1px solid #009688;
+	border: 1px solid #258bce;
 	border-radius: 0;
 	color: #fff;
-	background-color: #009688;
+	background-color: #258bce;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.42857143;
@@ -946,7 +946,7 @@ a:active {
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a {
-	color: #009688 !important;
+	/* color: #009688 !important; */
 }
 
 .navbar-nav > ul > li a:hover,
@@ -983,7 +983,7 @@ a:active {
 }
 
 .sub-menu {
-	min-width: 220px;
+	min-width: 150px;
 	margin: 0;
 	padding: 7px;
 	border: none;
@@ -996,6 +996,11 @@ a:active {
 	position: relative;
 	padding: 0;
 	color: #777;
+}
+
+.sub-menu li a:hover {
+	color: #fff;
+	background: #428BCA;
 }
 
 .sticky-menu {
@@ -1830,7 +1835,9 @@ blockquote {
 .top-navigation ul li a {
 	color: #505050;
 }
-
+.top-navigation ul li a:hover {
+	color:#0099FF;
+}
 .navbar-btn {
 	display: inline-block;
 	float: right;
@@ -1986,7 +1993,7 @@ blockquote {
 }
 
 .main-navigation .sub-menu a {
-	min-width: 220px;
+	min-width: 150px;
 	margin: 0;
 	padding: 7px 15px;
 	border: none;
@@ -2014,6 +2021,11 @@ blockquote {
 	color: #505050;
 	font: 700 14px/20px "Open Sans", Verdana, sans-serif;
 	text-transform: uppercase;
+}
+
+.main-navigation li a:hover{
+	color:#fff;
+	background: #337ab7;
 }
 
 .main-navigation .nav-menu > li > a {
@@ -2482,7 +2494,7 @@ text-transform: capitalize;
 *  Core Owl Carousel CSS File
 */
 .owl-carousel {
-	display: none;
+	/*display: none;*/
 	/* position relative and z-index fix webkit rendering fonts issue */
 	position: relative;
 	z-index: 1;
@@ -2534,6 +2546,7 @@ text-transform: capitalize;
 }
 
 .owl-carousel.owl-loaded {
+	/*display: none;*/
 	display: block;
 }
 
@@ -3083,6 +3096,7 @@ styled buttons not container for vertical centered navs*/
 
 .entry-overlay.entry-block.red .entry-overlay-meta,
 .entry-overlay.entry-block.red:hover .entry-overlay-meta {
+	display: none;
 	/* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(239,83,80,0)), color-stop(46%,rgba(239,83,80,0.65)), color-stop(100%,rgba(239,83,80,0.65)));
 	/* Chrome,Safari4+ */
@@ -3104,6 +3118,7 @@ styled buttons not container for vertical centered navs*/
 
 .entry-overlay.entry-block.orange .entry-overlay-meta,
 .entry-overlay.entry-block.orange:hover .entry-overlay-meta {
+	display: none;
 	/* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,193,7,0)), color-stop(46%,rgba(255,193,7,0.65)), color-stop(100%,rgba(255,193,7,0.65)));
 	/* Chrome,Safari4+ */
@@ -3125,6 +3140,7 @@ styled buttons not container for vertical centered navs*/
 
 .entry-overlay.entry-block.light_red .entry-overlay-meta,
 .entry-overlay.entry-block.light_red:hover .entry-overlay-meta {
+	display:none;
 	/* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,107,107,0)), color-stop(46%,rgba(255,107,107,0.65)), color-stop(100%,rgba(255,107,107,0.65)));
 	/* Chrome,Safari4+ */
@@ -3146,6 +3162,7 @@ styled buttons not container for vertical centered navs*/
 
 .entry-overlay.entry-block.blue .entry-overlay-meta,
 .entry-overlay.entry-block.blue:hover .entry-overlay-meta {
+	display: none;
 	/* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(41,182,246,0)), color-stop(46%,rgba(41,182,246,0.65)), color-stop(100%,rgba(41,182,246,0.65)));
 	/* Chrome,Safari4+ */
@@ -3167,6 +3184,7 @@ styled buttons not container for vertical centered navs*/
 
 .entry-overlay.entry-block.green .entry-overlay-meta,
 .entry-overlay.entry-block.green:hover .entry-overlay-meta {
+	display: none;
 	/* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(102,187,106,0)), color-stop(46%,rgba(102,187,106,0.65)), color-stop(100%,rgba(102,187,106,0.65)));
 	/* Chrome,Safari4+ */
@@ -3188,6 +3206,7 @@ styled buttons not container for vertical centered navs*/
 
 .entry-overlay.entry-block.purple .entry-overlay-meta,
 .entry-overlay.entry-block.purple:hover .entry-overlay-meta {
+	display: none;
 	/* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(171,71,188,0)), color-stop(46%,rgba(171,71,188,0.65)), color-stop(100%,rgba(171,71,188,0.65)));
 	/* Chrome,Safari4+ */
@@ -3209,6 +3228,7 @@ styled buttons not container for vertical centered navs*/
 
 .entry-overlay.entry-block.pink .entry-overlay-meta,
 .entry-overlay.entry-block.pink:hover .entry-overlay-meta {
+	display: none;
 	/* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(236,64,122,0)), color-stop(46%,rgba(236,64,122,0.65)), color-stop(100%,rgba(236,64,122,0.65)));
 	/* Chrome,Safari4+ */
@@ -3443,7 +3463,6 @@ styled buttons not container for vertical centered navs*/
 .entry-block .entry-media .entry-overlay-meta a {
 	display: inline;
 }
-
 .post-section {
 	margin-bottom: 35px;
 }
@@ -3665,7 +3684,9 @@ styled buttons not container for vertical centered navs*/
 
 .category .page-header h1,
 .search .page-header h1 {
-	margin: 20px 0 35px 0;
+	text-align: center;
+	/* margin: 20px 0 35px 0; */
+	color:#258bce;
 }
 
 .category .page-header,
@@ -3711,8 +3732,12 @@ styled buttons not container for vertical centered navs*/
 }
 
 .sidebar .widget li a {
-	color: #505050;
+	color: #258bce;
 	line-height: 2.6;
+}
+.sidebar .widget li a:hover {
+	color: #FFF;
+	background:#258bce ;
 }
 
 .sidebar .widget_rss li a {
@@ -3728,7 +3753,7 @@ ul > li:hover > a,
 .top-navigation ul > li:hover > a,
 .main-navigation ul > li:hover > a,
 .sidebar .widget li:hover a {
-	color: #009866;
+	/* color: #009866; */
 }
 
 .tagcloud:after {
@@ -4129,7 +4154,7 @@ ul > li:hover > a,
 	position: relative;
 	top: 8px;
 	left: 0;
-	width: 25px;
+	width: 60px;
 	height: 3px;
 	background-color: #009688;
 	content: "";
@@ -4219,7 +4244,7 @@ ul > li:hover > a,
 }
 
 #footer-bottom {
-	padding: 20px 0 25px;
+	padding: 15px 0 15px;
 	background-color: #eaeaea;
 	text-align: center;
 }
@@ -4321,7 +4346,7 @@ ul > li:hover > a,
 
 @media (min-width:992px) {
 	#footer-bottom {
-		padding: 25px 0;
+		padding: 15px 0;
 		text-align: left;
 	}
 
@@ -4724,6 +4749,7 @@ ul > li:hover > a,
 .title-underblock,
 .comment-reply-title,
 .comments-area > h2 {
+	display: none;
 	position: relative;
 	padding-bottom: 0.6em;
 }
@@ -4830,7 +4856,7 @@ ul > li:hover > a,
 .blog .entry,
 .archive .entry,
 .search .entry {
-	min-height: 190px;
+	min-height: 90px;
 }
 
 .islemag-top-carousel .entry-media figure {
@@ -4939,6 +4965,7 @@ ul > li:hover > a,
 }
 
 .entry-footer {
+	display: none;
 	color: #6a6a6a;
 	font-size: 13px;
 	line-height: 42px;
@@ -4996,7 +5023,7 @@ ul > li:hover > a,
 	margin-top: 11px;
 	padding: 6px 5px;
 	color: #f1f1f1;
-	background-color: #3a3a3a;
+	background-color: #258bce;
 	font-size: 14px;
 }
 
@@ -5625,11 +5652,13 @@ ul > li:hover > a,
 }
 
 .entry.single .entry-footer {
+	display: none;
 	margin-top: 35px;
 	margin-bottom: 50px;
 }
 
 .about-author {
+	display: none;
 	position: relative;
 	margin-bottom: 50px;
 	padding: 25px 20px 15px;
@@ -5933,3 +5962,112 @@ ul > li:hover > a,
 }
 
 /* test */
+.article-list{
+	font-family:Helvetica,Arial,sans-serif;
+
+	margin:0;
+}
+.article-list li {
+	border-bottom:1px dotted #DDDDDD;
+	list-style:none;
+	line-height:2em;
+}
+.wp-pagenavi {
+	margin:10px 0;
+}
+.wp-pagenavi a:hover,.wp-pagenavi span.current {
+	border:none;
+	background:#C72730;
+	font-weight:normal !important;
+}
+.wp-pagenavi a, .wp-pagenavi span {
+    border: none !important;
+	background: #333333;
+	color: #FFFFFF;
+    margin: 0 !important;
+    padding: 5px 8px !important;	
+}
+.post-comment, .post-date  {
+	list-style:none;
+	line-height:2em;
+}
+.post-date {
+	float: right;
+	vertical-align: bottom;
+	display: inline-block;
+	color: #8d8d8d;
+}
+@media (max-width: 768px) {
+	.post-title{
+		font-size: 15px;
+	    vertical-align: bottom;
+	    display: inline-block;
+	    width: 68%;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	    -o-text-overflow: ellipsis;
+	    overflow: hidden;
+	    display: -moz-inline-box;
+	    list-style: none;
+	    line-height: 2em;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.post-title{
+		font-size: 15px;
+	    vertical-align: bottom;
+	    display: inline-block;
+	    width: 78%;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	    -o-text-overflow: ellipsis;
+	    overflow: hidden;
+	    display: -moz-inline-box;
+	    list-style: none;
+	    line-height: 2em;
+	}
+}
+/* 底部链接 */
+.wailian li{ 
+	float:left
+}
+.wailian li a {
+	/* background: #FAFAFA;
+	border: 1px solid #e9e9e9; */
+	display: block;
+	text-align: left;
+	margin-left: 15px;
+	margin-bottom: 5px;
+	padding: 0 4px;
+	border-radius: 2px;
+	width:147px;
+	color: #5e5e5e;
+	line-height: 30px;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.wailian li a:hover {
+	color: #fff;
+	background: #428BCA;
+}
+.comments-area{
+	display: none;
+}
+.entry-title{
+	text-align: center;
+}
+.entry-title a:hover{
+	color: #fff;
+	background: #428BCA;
+}
+article{
+	text-align: center;
+}
+.entry-date{
+	/* background: #258bce; */
+}
+.post-title a {
+	color:#0099FF;
+}
